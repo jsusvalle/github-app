@@ -8,6 +8,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  env: {
+    GITHUB_SECRET_TOKEN: process.env.GITHUB_SECRET_TOKEN,
+  },
   async redirects() {
     return [
       {
